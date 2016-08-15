@@ -2,7 +2,7 @@ import stats_csv_reader
 import numpy as np
 import statsmodels.api as sm
 
-y, x_vals, Glass, cpx, fspar, qtz, amph, olivine, mag, ilm, chev, ap, fl, po = stats_csv_reader.opencsv("/Users/kiacovino/Desktop/test.csv")
+y, x_vals, Glass, cpx, fspar, qtz, amph, olivine, mag, ilm, chev, ap, fl, po = stats_csv_reader.opencsv("test.csv")
 
 def reg_m(y, x_vals):
     ones = np.ones(len(x_vals[0]))
